@@ -47,30 +47,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        close.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-
-                builder.setTitle("Xác nhận!");
-                builder.setMessage("Bạn có muốn thoát không!");
-
-                builder.setPositiveButton(getResources().getString(R.string.y), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int i) {
-                        finish();
-                    }
-                });
-                builder.setNegativeButton(getResources().getString(R.string.n), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog , int i) {
-                        dialog.cancel();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-
-            }
-        });
+//        close.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+//
+//                builder.setTitle("Xác nhận!");
+//                builder.setMessage("Bạn có muốn thoát không!");
+//
+//                builder.setPositiveButton(getResources().getString(R.string.y), new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int i) {
+//                        finish();
+//                    }
+//                });
+//                builder.setNegativeButton(getResources().getString(R.string.n), new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog , int i) {
+//                        dialog.cancel();
+//                    }
+//                });
+//                AlertDialog dialog = builder.create();
+//                dialog.show();
+//
+//            }
+//        });
     }
 }
